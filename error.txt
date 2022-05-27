@@ -1,0 +1,5 @@
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 102
+Current browser version is 101.0.4951.67 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+
+→chromeのアップデート
+→beta版が102バージョンで動くが、windowsはフォルダー構成がChrome Betaになっているため、すべてchromeフォルダに移さないと動かない
