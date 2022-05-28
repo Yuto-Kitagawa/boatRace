@@ -102,7 +102,7 @@ class GetResultURL():
                         
         #0~100番目を返す
         # 100番以降を返す時は[100:200]など
-        return month_url[100:400]
+        return month_url[100:500]
 
     
     def getDayURL(self,month_url):
