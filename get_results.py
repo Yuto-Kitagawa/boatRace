@@ -18,7 +18,6 @@ class insertDetail():
 
         cursor.execute("SELECT url FROM boat_results_url")
         for row in cursor:
-            print(row[0])
             res.append(row[0])
 
         # 保存を実行
@@ -29,5 +28,12 @@ class insertDetail():
         return res
     
     def sraping(serif,url):
-        for i in range(url):
-            url = ""
+        # for i in range(url):
+        response = requests.get(url=url)
+        response.encoding = response.apparent_encoding
+        print(response.text)
+
+
+cl = insertDetail()
+res = cl.getURL()
+cl.sraping(res[0])
